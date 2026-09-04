@@ -16,12 +16,10 @@ function renderItems(items) {
     const itemsToShow = items.slice(0, 6);
     
     const html = itemsToShow.map((item, index) => {
-        // Проверяем наличие ставок
         const hasBids = item.bids && item.bids.length > 0;
         const currentBid = hasBids ? Math.max(...item.bids) : item.price;
         const bidCount = hasBids ? item.bids.length : 0;
         
-        // Генерируем цвет для картинки
         const colors = ['3498db', 'e74c3c', '2ecc71', '9b59b6', 'f39c12', '1abc9c'];
         const color = colors[index % colors.length];
         
