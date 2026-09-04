@@ -1,222 +1,27 @@
-<!doctype html>
-<html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Маркетплейс</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="/" class="logo">🛒 Маркетплейс</a>
-            </nav>
-        </header>
+<main>
+    <div class="page-header">
+        <h1>🎵 Мой плейлист</h1>
+    </div>
+    
+    <div class="stats">
+        <div class="stat-item">
+            <span class="stat-value" id="totalTracks">0</span>
+            <span class="stat-label">Треков</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value" id="totalDuration">0:00</span>
+            <span class="stat-label">Общая длительность</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value" id="avgPopularity">0</span>
+            <span class="stat-label">Средняя популярность</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value" id="topArtist">—</span>
+            <span class="stat-label">Самый частый артист</span>
+        </div>
+    </div>
 
-        <main>
-            <div class="page-header">
-                <h1>Все товары</h1>
-            </div>
-
-            <!-- Statistics -->
-            <div class="stats">
-                <div class="stat-item">
-                    <span class="stat-value">15</span>
-                    <span class="stat-label">Товаров</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-value">42</span>
-                    <span class="stat-label">Ставок</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-value">12</span>
-                    <span class="stat-label">Активных</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-value">25 000 ₽</span>
-                    <span class="stat-label">Средняя цена</span>
-                </div>
-            </div>
-            <div class="items-grid">
-                <!-- Item 1 -->
-                <div class="item-card">
-                    <img
-                        src="https://via.placeholder.com/300x200/3498db/ffffff?text=Laptop"
-                        alt="Ноутбук Dell XPS 15"
-                        class="item-image" />
-                    <div class="item-content">
-                        <span class="status-badge status-active">Активно</span>
-                        <h3 class="item-title">Ноутбук Dell XPS 15</h3>
-                        <p class="item-description">
-                            Мощный ноутбук для работы и игр. Intel Core i7, 16GB
-                            RAM, RTX 3050. Состояние отличное.
-                        </p>
-                        <div class="item-footer">
-                            <div>
-                                <div class="item-price">65 000 ₽</div>
-                                <div class="bid-info">
-                                    Текущая ставка: 70 000 ₽
-                                    <span class="bid-count">5</span>
-                                </div>
-                            </div>
-                            <div class="item-meta">
-                                <span class="item-seller">
-                                    Продавец: techseller
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 2 -->
-                <div class="item-card">
-                    <img
-                        src="https://via.placeholder.com/300x200/e74c3c/ffffff?text=iPhone"
-                        alt="iPhone 14 Pro"
-                        class="item-image" />
-                    <div class="item-content">
-                        <span class="status-badge status-active">Активно</span>
-                        <h3 class="item-title">iPhone 14 Pro 256GB</h3>
-                        <p class="item-description">
-                            Новый iPhone 14 Pro в идеальном состоянии. Все
-                            аксессуары в комплекте. Deep Purple.
-                        </p>
-                        <div class="item-footer">
-                            <div>
-                                <div class="item-price">85 000 ₽</div>
-                                <div class="bid-info">
-                                    Текущая ставка: 90 000 ₽
-                                    <span class="bid-count">12</span>
-                                </div>
-                            </div>
-                            <div class="item-meta">
-                                <span class="item-seller">
-                                    Продавец: mobileshop
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 3 -->
-                <div class="item-card">
-                    <img
-                        src="https://via.placeholder.com/300x200/2ecc71/ffffff?text=Keyboard"
-                        alt="Клавиатура"
-                        class="item-image" />
-                    <div class="item-content">
-                        <span class="status-badge status-active">Активно</span>
-                        <h3 class="item-title">Механическая клавиатура</h3>
-                        <p class="item-description">
-                            Игровая механическая клавиатура с RGB подсветкой.
-                            Cherry MX Red switches.
-                        </p>
-                        <div class="item-footer">
-                            <div>
-                                <div class="item-price">5 000 ₽</div>
-                                <div class="bid-info">
-                                    Текущая ставка: 5 500 ₽
-                                    <span class="bid-count">3</span>
-                                </div>
-                            </div>
-                            <div class="item-meta">
-                                <span class="item-seller">
-                                    Продавец: gamer123
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 4 -->
-                <div class="item-card">
-                    <img
-                        src="https://via.placeholder.com/300x200/9b59b6/ffffff?text=Headphones"
-                        alt="Наушники"
-                        class="item-image" />
-                    <div class="item-content">
-                        <span class="status-badge status-active">Активно</span>
-                        <h3 class="item-title">Sony WH-1000XM5</h3>
-                        <p class="item-description">
-                            Беспроводные наушники с активным шумоподавлением.
-                            Состояние как новые.
-                        </p>
-                        <div class="item-footer">
-                            <div>
-                                <div class="item-price">25 000 ₽</div>
-                            </div>
-                            <div class="item-meta">
-                                <span class="item-seller">
-                                    Продавец: audiophile
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 5 -->
-                <div class="item-card">
-                    <img
-                        src="https://via.placeholder.com/300x200/f39c12/ffffff?text=Watch"
-                        alt="Apple Watch"
-                        class="item-image" />
-                    <div class="item-content">
-                        <span class="status-badge status-active">Активно</span>
-                        <h3 class="item-title">Apple Watch Series 8</h3>
-                        <p class="item-description">
-                            Умные часы Apple Watch Series 8, 45mm. Алюминиевый
-                            корпус, GPS + Cellular.
-                        </p>
-                        <div class="item-footer">
-                            <div>
-                                <div class="item-price">35 000 ₽</div>
-                                <div class="bid-info">
-                                    Текущая ставка: 37 000 ₽
-                                    <span class="bid-count">7</span>
-                                </div>
-                            </div>
-                            <div class="item-meta">
-                                <span class="item-seller">
-                                    Продавец: techguru
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 6 -->
-                <div class="item-card">
-                    <img
-                        src="https://via.placeholder.com/300x200/1abc9c/ffffff?text=Camera"
-                        alt="Фотоаппарат"
-                        class="item-image" />
-                    <div class="item-content">
-                        <span class="status-badge status-active">Активно</span>
-                        <h3 class="item-title">Canon EOS R6</h3>
-                        <p class="item-description">
-                            Профессиональная беззеркальная камера. Пробег 5000
-                            кадров. В комплекте с объективом 24-105mm.
-                        </p>
-                        <div class="item-footer">
-                            <div>
-                                <div class="item-price">150 000 ₽</div>
-                                <div class="bid-info">
-                                    Текущая ставка: 155 000 ₽
-                                    <span class="bid-count">4</span>
-                                </div>
-                            </div>
-                            <div class="item-meta">
-                                <span class="item-seller">
-                                    Продавец: photographer
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <footer>
-            <p>&copy; 2026 Маркетплейс. Все права защищены.</p>
-        </footer>
-    </body>
-</html>
+    <ul class="tracks-list" id="tracksContainer">
+    </ul>
+</main>
